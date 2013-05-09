@@ -1,0 +1,24 @@
+#THIS FILE IS SOURCED BY THE MINE.SH SCRIPT AND DEFINES THE CONFIGURATION USED ON THE MINERS
+
+#--------------------------------------
+#VARIABLES USED ON THE PROXY AND MINERS
+#--------------------------------------
+#mining guild server
+GUILDSERVER=''
+#mining guild port to be used
+GUILDPORT='3333'
+#worker name as registered in the mining guild
+WORKER=''
+#worker password  as registered in the mining guild
+WORKERPWD=''
+
+#-------------------
+#PROXY CONFIGURATION
+#-------------------
+#where to store the proxy and miners logs
+LOGSDIR=log
+#wether to start a mining proxy or not
+STARTPROXY=1
+#command that starts the mining proy (if STARTPROXY is defined).
+#starts the proxy in scrypt mode listening on localhost only
+PROXYCOMMAND="python stratum-mining-proxy-master/mining_proxy.py -o $GUILDSERVER -p $GUILDPORT -sh localhost -pa scrypt"

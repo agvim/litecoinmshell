@@ -1,0 +1,4 @@
+#name (must be unique) | autostart [0|1] | command
+"cuda" 0 "cudaminer -o 127.0.0.1:8332 -u $WORKER -p $WORKERPWD"
+"cgminer" 0 "cgminer --scrypt -o stratum+tcp://$GUILDSERVER:$GUILDPORT -u $WORKER -p $WORKERPWD -I 13"
+"cpu" 0 "minerd -o 127.0.0.1:8332 -u $WORKER -p $WORKERPWD"
