@@ -40,7 +40,7 @@ cgminer has support for the protocol, but cudaminer and cpuminer need to use a
 proxy.
 
 The recommended proxy is [bandroix
-stratum mining proxy](https://github.com/bandroidx/stratum-mining-prox),
+stratum mining proxy](https://github.com/bandroidx/stratum-mining-proxy),
 a stratum-mining-proxy fork that supports the litecoin scrypt algorythm.
 Download it and follow the installation instructions.
 
